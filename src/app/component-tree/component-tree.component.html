@@ -1,0 +1,12 @@
+<h1 class="mb-5">Component Baum</h1>
+
+<button type="button" (click)="addComponent()" class="btn btn-primary">Neue Component hinzufügen</button>
+<button type="button" (click)="removeComponent()" class="btn btn-primary ml-3">Letzte Component entfernen</button>
+
+<hr>
+
+<div class="alert alert-primary" *ngIf="message">{{message}}</div>
+
+<div *ngFor="let compNr of componentNumbers" class="d-inline-flex mb-3 mr-3">
+  <app-child [componentNumber]="compNr" (numberReport)="showComponentNr($event)"></app-child>
+</div>

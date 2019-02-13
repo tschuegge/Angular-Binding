@@ -1,0 +1,12 @@
+<h1 class="mb-5">Einzelne Component</h1>
+
+<h2>Property Binding</h2>
+<p>Das Property "textfieldValue" wird auf das Attribut "value" des Textfelds gebunden:</p>
+<p><input type="text" class="form-control" [value]="textfieldValue" disabled></p>
+<p>Variable "textOutputValue" wird ausgegeben:<br>{{textOutputValue}}</p>
+
+<hr>
+
+<h2>Event Binding</h2>
+<p><button type="button" (click)="buttonClick()" class="btn btn-primary">Event auslösen</button></p>
+<p class="alert alert-primary" *ngIf="buttonWasClicked">Button wurde geklickt!</p>
