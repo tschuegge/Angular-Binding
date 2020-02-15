@@ -10,17 +10,17 @@ import { timer } from 'rxjs';
 export class SingleComponent implements OnInit {
 
   /**
-   * Instanzvariabel welche an das Textfeld gebunden ist
+   * Instanzvariable welche an das Textfeld gebunden ist
    */
   textfieldValue = '';
 
   /**
-   * Instanzvariabel welche ausgegeben wird
+   * Instanzvariable welche ausgegeben wird
    */
   textOutputValue = '';
 
   /**
-   * Instanzvariabel welche geändert wird, wenn der Button geklickt wird
+   * Instanzvariable welche geändert wird, wenn der Button geklickt wird
    */
   buttonWasClicked = false;
 
