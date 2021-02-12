@@ -1,3 +1,7 @@
+1.1.1 (12.02.2021)
+------------------
+- Aktualisierung auf Angular 11.2
+
 1.1.0 (15.02.2019)
 ------------------
 - Aktualisierung auf Angular 9.0
