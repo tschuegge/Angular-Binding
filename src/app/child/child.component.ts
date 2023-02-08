@@ -8,7 +8,7 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class ChildComponent {
 
   @Input()
-  componentNumber: number;
+  componentNumber = 0;
 
   @Output()
   numberReport = new EventEmitter<number>();

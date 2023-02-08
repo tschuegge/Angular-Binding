@@ -1,11 +1,15 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # compiled output
+# /dist   # compiled output pubished for deployment on GitHub pages
 /tmp
 /out-tsc
 
 # dependencies
 /node_modules
+
+# angular cache
+/.angular/cache
 
 # IDE - VSCode
 .vscode/*
@@ -13,8 +17,7 @@
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
-.history/*
 
-# System Files
+# system files
 .DS_Store
 Thumbs.db
