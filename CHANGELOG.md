@@ -1,3 +1,9 @@
+1.2.0 (08.02.2023)
+==================
+- Aktualisierung auf Angular 15.1, Bootstrap 5
+- Kompatibilität mit Node 18 hergestellt
+- Linter (eslint) hinzugefügt
+
 1.1.1 (12.02.2021)
 ------------------
 - Aktualisierung auf Angular 11.2

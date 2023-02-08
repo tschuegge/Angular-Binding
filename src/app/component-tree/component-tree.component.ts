@@ -16,7 +16,7 @@ export class ComponentTreeComponent {
   /**
    * Nachricht falls eine ChildComponent eine Nummer zurückmeldet
    */
-  message: string;
+  message?: string;
 
   /**
    * Weitere ChildComponent hinzufügen
@@ -50,8 +50,8 @@ export class ComponentTreeComponent {
     // Instanzvariable 'message' steht
     this.message = `Component Nr. ${nr} hat sich gemeldet`;
 
-    // Nach 3 Sekunden wird die Message wieder auf 'null' zurückgesetzt und somit der Alert ausgeblendet
-    timer(3000).subscribe(() => this.message = null);
+    // Nach 3 Sekunden wird die Message wieder auf 'undefined' zurückgesetzt und somit der Alert ausgeblendet
+    timer(3000).subscribe(() => this.message = undefined);
   }
 
 }
