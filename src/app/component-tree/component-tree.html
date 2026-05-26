@@ -5,8 +5,8 @@
 
 <hr>
 
-<div class="alert alert-primary" *ngIf="message">{{message}}</div>
-
-<div *ngFor="let compNr of componentNumbers" class="d-inline-flex mb-3 me-3">
+@for (compNr of componentNumbers(); track $index) {
+<div class="d-inline-flex mb-3 me-3">
   <app-child [componentNumber]="compNr" (numberReport)="showComponentNr($event)"></app-child>
 </div>
+}

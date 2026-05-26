@@ -1,3 +1,8 @@
+2.0.0 (27.05.2026)
+==================
+- Aktualisierung auf Angular 21 mit Rebuild der Applikation
+- npm legacy-peer-deps auf Projektebene aktiviert (für ng-bootstrap)
+
 1.2.0 (08.02.2023)
 ------------------
 - Aktualisierung auf Angular 15.1, Bootstrap 5
