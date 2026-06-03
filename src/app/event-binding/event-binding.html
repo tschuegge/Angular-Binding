@@ -1,0 +1,20 @@
+<h1>Event Binding</h1>
+
+<p>Auf den folgenden Button sind folgende Events gebunden:</p>
+<ul>
+  <li>Click (Klick)</li>
+  <li>DlbClick(Doppelklick)</li>
+  <li>MouseOver (Mauszeiger darüber)</li>
+  <li>MouseOut (Mauszeiger ausserhalb)</li>
+</ul>
+<button type="button" class="btn btn-primary btn-lg mb-3" (click)="buttonClick()" (dblclick)="buttonDoubleClick($event)" (mouseover)="buttonMouseOver($event)" (mouseout)="buttonMouseOut($event)">Button</button>
+<p>Letztes gefeuertes Event: <strong>{{outputButtonEvents()}}</strong></p>
+<hr>
+<h2>Events in eigenen Components</h2>
+
+<div class="row mb-3">
+  <app-child (numberReport)="childComponentReportsNumber($event)" [componentNumber]="1" class="col"></app-child>
+  <app-child (numberReport)="childComponentReportsNumber($event)" [componentNumber]="2" class="col"></app-child>
+  <app-child (numberReport)="childComponentReportsNumber($event)" [componentNumber]="3" class="col"></app-child>
+</div>
+<p>Letztes gefeuertes Event: <strong>{{outputChildComponentNumber()}}</strong></p>

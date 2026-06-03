@@ -1,3 +1,7 @@
+2.1.0 (03.06.2026)
+------------------
+- Trennung der Seiten nach Property- und Event-Binding
+
 2.0.0 (27.05.2026)
 ==================
 - Aktualisierung auf Angular 21 mit Rebuild der Applikation

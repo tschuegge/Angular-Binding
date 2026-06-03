@@ -1,10 +1,12 @@
 import { Routes } from '@angular/router';
-import { Single } from './single/single';
 import { ComponentTree } from './component-tree/component-tree';
+import { PropertyBinding } from './property-binding/property-binding';
+import { EventBinding } from './event-binding/event-binding';
 
 export const routes: Routes = [
-  { path: 'single', component: Single },
+  { path: 'property-binding', component: PropertyBinding },
+  { path: 'event-binding', component: EventBinding },
   { path: 'component-tree', component: ComponentTree },
-  { path: '', pathMatch: 'full', redirectTo: '/single' },
+  { path: '', pathMatch: 'full', redirectTo: '/property-binding' },
   { path: '**', redirectTo: '/' }
 ];

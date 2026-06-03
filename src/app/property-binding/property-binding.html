@@ -1,20 +1,15 @@
-<h1 class="mb-5">Einzelne Component</h1>
-
-<h2>Property Binding</h2>
+<h1>Property Binding</h1>
 <p>Das Property <code>textfieldValue</code> wird auf das Attribut <code>value</code> des Textfelds gebunden:</p>
 
 <!-- Wert des Signals "textfieldValue" wird auf das HTML-Property "value" des Textfelds ('input type="text"') gebunden -->
 <!-- Beachte das Signals technisch gesehen Funktionen sind, daher braucht es die Klammern am Ende -->
-<p><input type="text" class="form-control" [value]="textfieldValue()" disabled></p>
+<p><input type="text" class="form-control" [value]="textfieldValue()"></p>
 
 <!-- Wert des Signals "textOutputValue" wird mit geschweifen Klammern direkt ausgegeben -->
 <!-- Beachte das Signals technisch gesehen Funktionen sind, daher braucht es die Klammern am Ende -->
-<p>Variable <code>textOutputValue</code> wird ausgegeben:<br>{{textOutputValue()}}</p>
+<p>Signal <code>textOutputValue</code> wird ausgegeben:<br>{{textOutputValue()}}</p>
 
 <hr>
 
-<h2>Event Binding</h2>
-<p><button type="button" (click)="buttonClick()" class="btn btn-primary">Event auslösen</button></p>
-@if (buttonWasClicked) {
-<p class="alert alert-primary">Button wurde geklickt!</p>
-}
+<button type="button" class="btn btn-primary" (click)="increaseValue()">+</button>
+<button type="button" class="btn btn-primary ms-3" (click)="decreaseValue()">-</button>
